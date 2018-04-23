@@ -49,6 +49,20 @@ app.get("/submit", (req, res) => {
 	request.post('https://mhasler.eu/delivery.php?group_id=B&article_id=' + req.query.name + '&version=1');
 });
 
+app.get("/add", (req, res) => {
+	res.render('pages/add');
+});
+
+app.get("/addarticle", (req, res) => {
+	var dbo = datenbank.db("webshop");
+	var senddata = {name: req.query.name, beschreibung: req.query.beschreibung, bildurl: req.query.bildurl};
+	dbo.collection("artikel").insertOne(senddata, function (err, res) {
+		if (err) throw err;
+		console.log("Einen Artikel hinzugefügt!");
+	});
+	res.send("Artikel hinzugefügt");
+});
+
 
 
 app.listen(8080);
