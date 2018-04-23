@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		function submit(item) {
+			$.get("/SUBMIT", {
+				name: item,
+				date: new Date()
+			});		
+		}
+	</script>
+</head>
+<body>
+	<% include ../partials/header %>
+
+	<% articles.forEach(function(article) { %>
+	
+		<div id="artikel">
+			<div id="bild">
+				<img id="image" src="<%= article.bildurl %>">
+			</div>
+			<div id="beschreibung">
+				<div style="border: thin solid black;">
+					<div style="font-size:20px;margin-top:2px;margin-bottom:2px;font-weight:bold;">
+						<%= article.name %>
+					</div>
+				</div>
+				<div style="margin-top:5px;">
+					<%= article.beschreibung %>
+				</div>
+				<div style="bottom:5px;right:5px;position:absolute">
+					<button style="width:150px; height:30px;" onclick="submit('<%= article.name %>')">
+						Kaufen
+					</button>
+				</div>
+			</div>
+		</div>
+		
+		
+	<% }); %>
+	
+	
+</body>
+</html>
