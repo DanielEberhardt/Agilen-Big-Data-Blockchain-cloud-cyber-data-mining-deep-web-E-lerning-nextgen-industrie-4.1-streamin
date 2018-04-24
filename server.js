@@ -67,6 +67,7 @@ var server = app.listen(8080);
 
 var stdin = process.openStdin();
 
+<<<<<<< HEAD
  process.stdin.resume();
  var util = require('util');
 
@@ -84,6 +85,9 @@ var stdin = process.openStdin();
     console.log('Now that process.stdin is paused, there is nothing more to do.');
     process.exit();
   }
+=======
+app.listen(7343);
+>>>>>>> 9119722d7463f3991e28db83499edb3571e741c2
 console.log("Server started!");
 
 
