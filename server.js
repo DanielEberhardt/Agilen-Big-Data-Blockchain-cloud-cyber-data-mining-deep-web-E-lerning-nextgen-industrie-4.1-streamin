@@ -63,9 +63,27 @@ app.get("/addarticle", (req, res) => {
 	res.send("Artikel hinzugefügt");
 });
 
+var server = app.listen(8080);
 
+var stdin = process.openStdin();
 
-app.listen(8080);
+ process.stdin.resume();
+ var util = require('util');
+
+  process.stdin.on('data', function (text) {
+    var input = text.toString().trim();
+	
+	if(input == "quit" || input == "close" || input == "exit") {
+		server.close();
+		console.log("Server gestoppt!");
+		process.exit();
+	}
+  });
+
+  function done() {
+    console.log('Now that process.stdin is paused, there is nothing more to do.');
+    process.exit();
+  }
 console.log("Server started!");
 
 
