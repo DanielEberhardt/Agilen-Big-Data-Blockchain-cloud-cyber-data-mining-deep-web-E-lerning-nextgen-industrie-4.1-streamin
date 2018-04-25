@@ -1,11 +1,26 @@
 {
-    "name": "node-ejs",
-    "main": "server.js",
-    "dependencies": {
-        "ejs": "^1.0.0",
-        "express": "^4.6.1",
-        "forever": "^0.15.3",
-        "mongodb": "^3.0.7",
-        "request": "^2.85.0"
-    }
+  "name": "ejs",
+  "main": "server.js",
+  "dependencies": {
+    "ejs": "^1.0.0",
+    "express": "^4.6.1",
+    "mongodb": "^3.0.7",
+    "request": "^2.85.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "version": "1.0.0",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielEberhardt/Agilen-Big-Data-Blockchain-cloud-cyber-data-mining-deep-web-E-lerning-nextgen-industrie-4.1-streamin.git"
+  },
+  "author": "Jan Muelek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielEberhardt/Agilen-Big-Data-Blockchain-cloud-cyber-data-mining-deep-web-E-lerning-nextgen-industrie-4.1-streamin/issues"
+  },
+  "homepage": "https://github.com/DanielEberhardt/Agilen-Big-Data-Blockchain-cloud-cyber-data-mining-deep-web-E-lerning-nextgen-industrie-4.1-streamin#readme",
+  "description": ""
 }
