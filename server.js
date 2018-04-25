@@ -82,7 +82,7 @@ var stdin = process.openStdin();
     console.log('Now that process.stdin is paused, there is nothing more to do.');
     process.exit();
   }
-app.listen(7343);
+var server = app.listen(7343);
 console.log("Server started!");
 
 
