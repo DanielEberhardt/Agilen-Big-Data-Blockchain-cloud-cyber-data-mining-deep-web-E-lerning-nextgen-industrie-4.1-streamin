@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "ejs",
   "main": "server.js",
   "dependencies": {
@@ -23,4 +24,22 @@
   },
   "homepage": "https://github.com/DanielEberhardt/Agilen-Big-Data-Blockchain-cloud-cyber-data-mining-deep-web-E-lerning-nextgen-industrie-4.1-streamin#readme",
   "description": ""
+=======
+  "name": "node-ejs",
+  "main": "server.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "dependencies": {
+    "chai": "^4.1.2",
+    "ejs": "^1.0.0",
+    "express": "^4.16.3",
+    "mocha": "^5.1.1",
+    "mongodb": "^3.0.7",
+    "request": "^2.85.0"
+  },
+  "devDependencies": {
+    "mocha-mongodb": "^0.1.2"
+  }
+>>>>>>> cd2638cc9fb0a130a95f8e67a71026e46fbf9fff
 }
