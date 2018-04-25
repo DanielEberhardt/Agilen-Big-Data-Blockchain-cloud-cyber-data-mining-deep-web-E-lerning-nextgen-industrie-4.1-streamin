@@ -10,7 +10,6 @@ var datenbank;
 var fs = require('fs');
 var config = fs.readFileSync("config.json");
 var configContent = JSON.parse(config);
-console.log(configContent.port);
 
 
 MongoClient.connect("mongodb://localhost:27017/webshop", function(err, db) {
