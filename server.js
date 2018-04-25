@@ -7,6 +7,12 @@ var MongoClient = require('mongodb').MongoClient;
 var articles = [];
 var datenbank;
 
+var fs = require('fs');
+var config = fs.readFileSync("config.json");
+var configContent = JSON.parse(config);
+console.log(configContent.port);
+
+
 MongoClient.connect("mongodb://localhost:27017/webshop", function(err, db) {
 	if(err) throw err;
 	datenbank = db;
@@ -82,7 +88,7 @@ var stdin = process.openStdin();
     console.log('Now that process.stdin is paused, there is nothing more to do.');
     process.exit();
   }
-var server = app.listen(7343);
+var server = app.listen(configContent.port);
 console.log("Server started!");
 
 

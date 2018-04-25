@@ -1,7 +1,6 @@
 {
   "name": "ejs",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "directories": {
     "test": "test"
@@ -29,5 +28,6 @@
   "bugs": {
     "url": "https://github.com/DanielEberhardt/Agilen-Big-Data-Blockchain-cloud-cyber-data-mining-deep-web-E-lerning-nextgen-industrie-4.1-streamin/issues"
   },
-  "homepage": "https://github.com/DanielEberhardt/Agilen-Big-Data-Blockchain-cloud-cyber-data-mining-deep-web-E-lerning-nextgen-industrie-4.1-streamin#readme"
+  "homepage": "https://github.com/DanielEberhardt/Agilen-Big-Data-Blockchain-cloud-cyber-data-mining-deep-web-E-lerning-nextgen-industrie-4.1-streamin#readme",
+  "description": ""
 }
