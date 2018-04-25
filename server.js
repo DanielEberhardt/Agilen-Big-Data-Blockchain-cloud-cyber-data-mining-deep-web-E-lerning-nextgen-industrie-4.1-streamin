@@ -65,7 +65,7 @@ app.get("/addarticle", (req, res) => {
 
 
 
-app.listen(8080);
+app.listen(7343);
 console.log("Server started!");
 
 
