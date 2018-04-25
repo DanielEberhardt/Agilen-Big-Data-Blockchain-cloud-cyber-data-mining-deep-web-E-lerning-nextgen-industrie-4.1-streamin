@@ -1,45 +1,33 @@
 {
-<<<<<<< HEAD
   "name": "ejs",
-  "main": "server.js",
-  "dependencies": {
-    "ejs": "^1.0.0",
-    "express": "^4.6.1",
-    "mongodb": "^3.0.7",
-    "request": "^2.85.0"
-  },
-  "scripts": {
-    "start": "node server.js"
-  },
   "version": "1.0.0",
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DanielEberhardt/Agilen-Big-Data-Blockchain-cloud-cyber-data-mining-deep-web-E-lerning-nextgen-industrie-4.1-streamin.git"
-  },
-  "author": "Jan Muelek",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/DanielEberhardt/Agilen-Big-Data-Blockchain-cloud-cyber-data-mining-deep-web-E-lerning-nextgen-industrie-4.1-streamin/issues"
-  },
-  "homepage": "https://github.com/DanielEberhardt/Agilen-Big-Data-Blockchain-cloud-cyber-data-mining-deep-web-E-lerning-nextgen-industrie-4.1-streamin#readme",
-  "description": ""
-=======
-  "name": "node-ejs",
+  "description": "",
   "main": "server.js",
-  "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec"
+  "directories": {
+    "test": "test"
   },
   "dependencies": {
     "chai": "^4.1.2",
-    "ejs": "^1.0.0",
-    "express": "^4.16.3",
-    "mocha": "^5.1.1",
+    "mocha-mongo": "^1.0.0",
+    "mocha-mongodb": "^0.1.2",
     "mongodb": "^3.0.7",
     "request": "^2.85.0"
   },
   "devDependencies": {
-    "mocha-mongodb": "^0.1.2"
-  }
->>>>>>> cd2638cc9fb0a130a95f8e67a71026e46fbf9fff
+    "mocha": "^5.1.1"
+  },
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielEberhardt/Agilen-Big-Data-Blockchain-cloud-cyber-data-mining-deep-web-E-lerning-nextgen-industrie-4.1-streamin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielEberhardt/Agilen-Big-Data-Blockchain-cloud-cyber-data-mining-deep-web-E-lerning-nextgen-industrie-4.1-streamin/issues"
+  },
+  "homepage": "https://github.com/DanielEberhardt/Agilen-Big-Data-Blockchain-cloud-cyber-data-mining-deep-web-E-lerning-nextgen-industrie-4.1-streamin#readme"
 }
