@@ -37,7 +37,7 @@ describe("Shop Test", function (done) {
         it('read from db', ready(function (db, done) {
             db.collection("test").find({}).toArray(function (err, result) {
                 try {
-                    assert.equal(1, result.length);
+                    assert.equal("TestCase", result[0].test);
                     done();
                 } catch (err) {
                     done(err);
