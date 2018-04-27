@@ -14,14 +14,6 @@ describe("Shop Test", function (done) {
         db.collection("test").deleteMany({}, (err) => console.log(err));
         done();
     }));
-    describe("Website Test", function () {
-        var url = "http://localhost:"+configContent.port;
-        it("returns status 200", function () {
-            request(url, function (error, response, body) {
-                expect(response.statusCode).to.equal(200);
-            });
-        });
-    });
     describe("Database Write Test", function () {
         var ready = mongo.ready();
         it('using the db', ready(function (db, done) {
