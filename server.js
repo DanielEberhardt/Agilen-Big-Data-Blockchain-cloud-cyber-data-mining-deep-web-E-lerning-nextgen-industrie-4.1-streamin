@@ -19,7 +19,7 @@ MongoClient.connect("mongodb://localhost:27017/webshop", function(err, db) {
 });
 
 
-// set the view engine to ejs2app.set('view engine', 'ejs');
+app.set('view engine', 'ejs');
 
 // use res.render to load up an ejs view file
 
