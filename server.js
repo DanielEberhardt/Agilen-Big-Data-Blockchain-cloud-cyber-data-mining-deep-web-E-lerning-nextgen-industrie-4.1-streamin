@@ -19,8 +19,7 @@ MongoClient.connect("mongodb://localhost:27017/webshop", function(err, db) {
 });
 
 
-// set the view engine to ejs
-app.set('view engine', 'ejs');
+// set the view engine to ejs2app.set('view engine', 'ejs');
 
 // use res.render to load up an ejs view file
 
@@ -51,7 +50,7 @@ app.get("/submit", (req, res) => {
 	});
 	res.send(req.query.name);
 	
-	request.post('https://mhasler.eu/delivery.php?group_id=B&article_id=' + req.query.name + '&version=1');
+	request.post('https://mhasler.eu/delivery.php?group_id=B&article_id=' + req.query.name + '&version=2');
 });
 
 app.get("/add", (req, res) => {
